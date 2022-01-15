@@ -1,0 +1,23 @@
+---
+// Component Imports
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Tour from '../components/Tour.astro';
+import ReactCounter from '../components/ReactCounter.jsx';
+
+let title = 'My Astro Site';
+---
+<BaseLayout title={title} />
+
+    <style>
+        p {
+            color:blue;
+        }
+    </style>
+
+        <p>This is inside the slot, from index.astro</p>
+		<Tour />
+		<ReactCounter client:visible />
+        
+</BaseLayout>
+
